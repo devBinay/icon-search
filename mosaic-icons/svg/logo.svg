@@ -1,0 +1,23 @@
+<svg viewBox="0 0 7.8052081 7.8052085" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient x1="16.238" x2="16.238" y1="6.416" y2="31.996" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD600" offset="0"/>
+      <stop stop-color="#E74E0F" offset="1"/>
+    </linearGradient>
+    <clipPath>
+      <use width="100%" height="100%" xlink:href="#a"/>
+    </clipPath>
+    <linearGradient x1="16.34" x2="16.34" y1="6.362" y2="32.042" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD600" offset="0"/>
+      <stop stop-color="#E74E0F" offset="1"/>
+    </linearGradient>
+    <path d="M16.2 20l7 12H31L16.2 6.4 1.5 32h7.8l6.9-12"></path>
+    <path d="M1.5 6.4h29.8v25.7H1.5z"></path>
+  </defs>
+  <g transform="translate(-.397 -1.38) scale(.26458)">
+    <use width="100%" height="100%" fill="url(#b)" xlink:href="#a"/>
+    <g class="st3" clip-path="url(#c)">
+      <use width="100%" height="100%" fill="url(#d)" xlink:href="#e"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+mosaic-tile a.tile-fixed {
+width: 200px !important;
+height: 150px ;
+display: inline-flex !important;
+flex-direction: column;
+justify-content: center !important;
+align-items: center !important;
+}
+
+mosaic-tile .tile-text {
+    width: calc(100% - 20px);
+}

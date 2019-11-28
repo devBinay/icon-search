@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/custom.css" />
+</head>
+
+<body>
+    <mosaic-page>
+        <mosaic-container top fixed navbar>
+            <mosaic-app-name name="Thesaurus" />
+        </mosaic-container>
+        <mosaic-container content>
+            <mosaic-container left fixed sidebar id="left-container" resize>
+            </mosaic-container>
+            <mosaic-container main>
+                <mosaic-page-header fixed title="Thesaurus"></mosaic-page-header>
+                <mosaic-container inner fluid>
+                    <mosaic-card>
+                        <mosaic-card-body>
+
+                            <mosaic-form target="_blank" method="post" prevent-default>
+                                <mosaic-search-input id="my-search" name="myInput" block label="Search Label Text"
+                                    help-text="Help Text" placeholder="Placeholder Text"
+                                    valid-text="This is some valid text" invalid-text="This is some invalid text">
+                                </mosaic-search-input>
+                                <!-- <mosaic-form-actions>
+                                            <mosaic-button reset>Reset</mosaic-button>
+                                            <mosaic-button submit>Submit</mosaic-button>
+                                        </mosaic-form-actions> -->
+                            </mosaic-form>
+                            <div id="exact-match" class="mt-2">
+                                <mosaic-title></mosaic-title>
+                            </div>
+                            <div id="partial-match" class="mt-4">
+                                    <mosaic-title></mosaic-title>
+                            </div>
+                            <div id="synonyms-match" class="mt-4">
+                                    <mosaic-title></mosaic-title>
+                             </div>
+                        </mosaic-card-body>
+                    </mosaic-card>
+                </mosaic-container>
+            </mosaic-container>
+        </mosaic-container>
+    </mosaic-page>
+    <!-- <script>
+        window.mosaicUseLayout = true
+    </script>
+    <script src="https://cdn.svc.oneadvanced.com/mosaic-components/components-loader.js" async></script> -->
+
+    <mosaic-hidden-input name="test" value="test"></mosaic-hidden-input>
+    <input type="hidden" id="hidden-input" value=""></input>
+    <script>
+        window.mosaicConfigure = {
+            componentPath: 'https://cdn.svc.oneadvanced.com/mosaic-components/latest',
+            vendorPath: 'https://cdn.svc.oneadvanced.com/mosaic-components/latest/vendor',
+            themePath: 'https://cdn.svc.oneadvanced.com/mosaic-components/latest',
+            componentBundle: null,
+            extensionsPath: null,
+            frameworkBundle: null,
+            useLayout: true,
+            useScaffold: false,
+            useControls: true,
+            useData: false,
+            useForms: true,
+            useMessaging: true,
+            usePages: false,
+            usePageLoader: false
+        }
+    </script>
+    <script src="https://cdn.svc.oneadvanced.com/mosaic-components/latest/components-loader.js" async></script>
+    <script src="/public/search.js" async></script>
+    <mosaic-notification></mosaic-notification>
+</body>
+
+</html>
